@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Data Entry</title>
+  <link rel="stylesheet" href="CV-entry.css">
+
+  <!-- jsPDF + html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>CV Data Entry</h1>
+    <nav>
+      <a href="../first page.html">Home</a>
+      <a href="CV.html">View My CV</a>
+      <a href="event.html"> Events</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="cvForm">
+
+      <!-- Personal Info -->
+     
+<h4>Personal Info</h4>
+<fieldset>
+  <label for="fullName">Full Name*</label>
+  <input type="text" id="fullName" name="fullName" required>
+
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone</label>
+  <input type="tel" id="phone" name="phone">
+
+  <label for="bio">Short Bio</label>
+  <textarea id="bio" name="bio"></textarea>
+</fieldset>
+
+      <!-- Education -->
+      <h4>Education</h4>
+      <fieldset id="educationSection">
+        <div class="edu-group">
+          <input type="text" name="degree[]" placeholder="Degree" required>
+          <input type="text" name="institution[]" placeholder="Institution" required>
+          <input type="text" name="year[]" placeholder="Year" required>
+        </div>
+        <button type="button" id="addEducation">Add More Education</button>
+      </fieldset>
+
+      <!-- Experience -->
+      <h4>Experience</h4>
+      <fieldset id="experienceSection">
+        <div class="exp-group">
+          <input type="text" name="jobTitle[]" placeholder="Job Title" required>
+          <input type="text" name="company[]" placeholder="Company" required>
+          <input type="text" name="dates[]" placeholder="Dates" required>
+        </div>
+        <button type="button" id="addExperience">Add More Experience</button>
+      </fieldset>
+
+      <!-- Skills -->
+      <h4>Skills</h4>
+      <fieldset id="skillsSection">
+        <div class="skill-group">
+          <input type="text" name="skills[]" placeholder="Skill">
+        </div>
+        <button type="button" id="addSkill">Add More Skills</button>
+      </fieldset>
+
+      <!-- Projects / Certifications -->
+      <h4>Projects / Certifications (Optional)</h4>
+      <fieldset id="projectsSection">
+        <div class="proj-group">
+          <input type="text" name="projects[]" placeholder="Project / Certification">
+        </div>
+        <button type="button" id="addProject">Add More Projects</button>
+      </fieldset>
+
+      <button type="submit">Preview CV</button>
+      <button type="button" id="downloadPdf">Download PDF</button>
+
+    </form>
+
+    <section id="cvPreview">
+      <h2>CV Preview</h2>
+      <!-- CV will render here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated: <span id="lastUpdated"></span></p>
+    <p>Disclaimer: Content generated for educational purposes. AI-assisted.</p>
+  </footer>
+
+  <script src="CV-entry.js"></script>
+</body>
+</html>
+
+

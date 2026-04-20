@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EFE7DA;
+  margin: 0;
+  padding: 0;
+  color: #4a3220;
+}
+
+header {
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 0.5rem;
+  color: #4a3220;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input, textarea {
+  display: block;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  width: 95%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #4a7a4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background: #3b5f3b;
+}
+
+.group-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.group-row input {
+  flex: 1;
+}
+
+.removeBtn {
+  background: #a33;
+  margin-top: 0;
+}
+
+.removeBtn:hover {
+  background: #800;
+}
+
+#cvPreview {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+

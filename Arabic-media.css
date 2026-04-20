@@ -1,0 +1,286 @@
+/* ===============================
+   General body and page styles
+   =============================== */
+body.topic1-page {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  background-color: #EFE7DA; 
+  color: #4a3220; 
+  direction: rtl;
+}
+
+.header-container {
+  height: 15px;
+  background-color: #EFE7DA;
+}
+
+/* ===============================
+   Header styles
+   =============================== */
+header {
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #4a7a4a;
+  text-shadow: 2px 2px #a3c2a3;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Header navigation links */
+header nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.header-link {
+  color: #4a7a4a;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: #e6f0e6;
+  transition: 0.3s;
+}
+
+.header-link:hover,
+.header-link.active {
+  background-color: #a3c2a3;
+  color: #fff;
+}
+
+/* ===============================
+   Top-right buttons (above content)
+   =============================== */
+.top-buttons-plain {
+  text-align: left;  /* left-to-right buttons, visually aligned */
+  margin: 1rem 0;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: #e6f0e6;
+  transition: 0.3s;
+}
+
+.top-buttons-plain a:hover {
+  background-color: #a3c2a3;
+  color: #fff;
+}
+
+/* ===============================
+   Main content container
+   =============================== */
+main.content-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Topics/cards */
+.topic {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.topic h2 {
+  color: #2f5d62;
+  font-size: 1.3rem;
+}
+
+.topic img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Media section */
+.media-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* References and AI disclosure sections */
+.references, .ai-disclosure {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.references h2, .ai-disclosure h2 {
+  color: #2f5d62;
+}
+
+/* ===============================
+   Footer styles
+   =============================== */
+footer {
+  background-color: #fff;
+  color: #4a7a4a;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  border-top: 3px solid #a3c2a3;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+  margin-top: 2rem;
+}
+
+.footer-link {
+  color: #4a7a4a;
+  font-weight: 600;
+  text-shadow: 1px 1px #a3c2a3;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px #a3c2a3;
+}
+
+/* ===============================
+   Topic card design (if needed)
+   =============================== */
+.topic-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: row;
+}
+
+.topic-card.reverse { 
+  flex-direction: row-reverse;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card-img {
+  width: 45%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoom-out img { 
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.zoom-out:hover img {
+  transform: scale(1);
+}
+
+.card-text {
+  width: 55%;
+  padding: 2rem;
+}
+
+.card-text h2 {
+  color: #4a7a4a;
+  margin-top: 0;
+  text-shadow: 1px 1px #a3c2a3;
+}
+
+.card-text p, .card-text li {
+  line-height: 1.6;
+}
+
+.card-text h3 {
+  margin-top: 1.5rem;
+  color: #4a7a4a;
+  text-shadow: 1px 1px #d3e6d3;
+}
+
+/* ===============================
+   Responsive adjustments
+   =============================== */
+@media screen and (max-width: 900px) {
+  .topic-card,
+  .topic-card.reverse {
+    flex-direction: column;
+  }
+
+  .card-img, .card-text {
+    width: 100%;
+  }
+
+  .card-text {
+    padding: 1.5rem;
+  }
+
+  .zoom-out img {
+    transform: scale(1); 
+  }
+
+  
+}
+.top-buttons-plain {
+  text-align: right;       /* align links to right edge */
+  margin-bottom: 10px;
+  padding-right: 1rem;     /* distance from right edge */
+  font-size: 0.9rem;
+}
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 20px;          /* spacing between links */
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  display: inline-block;       /* keep text and emoji together */
+  direction: ltr;              /* make emoji appear left of text */
+  unicode-bidi: plaintext;     /* ensures proper order */
+}
+
+.top-buttons-plain a:hover {
+  color: #a3c2a3;
+}
+
+
+

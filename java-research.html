@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Research</title>
+  <link rel="stylesheet" href="java-research.css">
+</head>
+<body>
+  <header>
+    <div class="top-buttons-plain">
+    <a href="../first page.html">🏠 Home</a>
+    <a href="CV.html">📄 My CV</a>
+    <a href="schedule.html">🗓️ My Schedule</a>
+    <a href="CV-entry.html"> 📝CV Data Entry</a>
+     <a href="event.html"> Events</a>
+  </div>
+    <h1>JavaScript Research</h1>
+    <nav>
+      <a href="../first page.html" class="header-link">welcome</a> |
+        <a href="index.html" class="header-link">Overview</a> |
+        <a href="history.html" class="header-link">History of the Web & Browsers</a> |
+        <a href="security.html" class="header-link">Security on the Web</a> |
+        <a href="mobile-first.html" class="header-link">Mobile-First Development</a> |
+        <a href="stats.html" class="header-link">Internet Stats — Middle East & Lebanon</a> |
+        <a href="CSS History.html" class="header-link">CSS-History</a> |
+        <a class="header-link" href="java-research.html">JavaScript Topics</a> |
+        <a href="arabic summary.html" class="header-link">Arabic summary</a> |
+         <a href ="Arabic-media.html" class="header-link">Arabic-media</a> |
+        <a href="references.html" class="header-link">References</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="topics-grid">
+
+      <div class="topic-box">
+        <div class="topic-text">
+          <h3>1. The Birth of JavaScript (1995)</h3>
+          <p>JavaScript was created in 1995 by <strong>Brendan Eich</strong> at <strong>Netscape Communications</strong>. It was first called <em>Mocha</em>, then <em>LiveScript</em>, and finally <em>JavaScript</em>. Eich designed it in just 10 days to make web pages interactive inside the browser. JavaScript first appeared in <strong>Netscape Navigator 2</strong> and was later standardized as <strong>ECMAScript</strong> by <strong>ECMA International</strong> in 1997.</p>
+        </div>
+      </div>
+
+      <div class="topic-box">
+        <div class="topic-text">
+          <h3>2. What's eval in JavaScript? It was blocked. What policy blocks it?</h3>
+          <p>The <code>eval()</code> function in JavaScript executes a string as code. For example, <code>eval("2 + 2")</code> returns <code>4</code>. However, using <code>eval()</code> is dangerous because it can run malicious code, so it’s often blocked or restricted. Modern browsers and security systems can block <code>eval()</code> under <strong>Content Security Policy (CSP)</strong>. This policy prevents unsafe code execution to protect against attacks like <strong>cross-site scripting (XSS)</strong>.</p>
+        </div>
+      </div>
+
+      <div class="topic-box">
+        <div class="topic-text">
+          <h3>3. Does JavaScript short-circuit logical expressions when the result is already determined?</h3>
+          <p>Yes. JavaScript uses <strong>short-circuit evaluation</strong> for logical operators. In expressions with <code>&&</code> (AND) or <code>||</code> (OR), it stops evaluating once the result is known. For example: <code>false && something()</code> won’t call <code>something()</code> because the result is already <code>false</code>. This improves performance and avoids unnecessary operations.</p>
+        </div>
+      </div>
+
+      <div class="topic-box">
+        <div class="topic-text">
+          <h3>4. How can we implement a method in JavaScript that can accept 1000 arguments?</h3>
+          <p>No, you don’t need 1000 separate methods. In JavaScript, functions can accept a flexible number of arguments using the <strong>rest parameter</strong> (<code>...args</code>) or the built-in <code>arguments</code> object.</p>
+          <pre>
+function manyArgs(...args) {
+  console.log(args.length);
+}
+manyArgs(1, 2, 3, ..., 1000); // Works fine
+          </pre>
+          <p>JavaScript automatically handles any number of arguments passed to a function.</p>
+        </div>
+      </div>
+
+      <div class="topic-box">
+        <div class="topic-text">
+          <h3>5. Does JavaScript support pre and post incrementation?</h3>
+          <p>Yes. JavaScript supports both <strong>pre-increment (++x)</strong> and <strong>post-increment (x++)</strong> operators.</p>
+          <p><strong>Pre-increment (++x):</strong> Increases the value first, then returns the new value.<br>
+          <strong>Post-increment (x++):</strong> Returns the current value first, then increases it.</p>
+          <pre>
+let x = 5;
+console.log(++x); // 6
+console.log(x++); // 6 (then becomes 7)
+          </pre>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 JavaScript Research Project</p>
+    <div class="footer-nav">
+      <a href="../first page.html" class="footer-link">welcome</a> |
+      <a href="index.html" class="footer-link">Overview</a>
+      <a href="history.html" class="footer-link">History of the Web & Browsers</a>
+      <a href="security.html" class="footer-link">Security on the Web</a>
+      <a href="mobile-first.html" class="footer-link">Mobile-First Development</a>
+      <a href="stats.html" class="footer-link">Internet Stats</a>
+      <a href="CSS History.html" class="footer-link">CSS History</a>
+<a class="footer-link" href="java-research.html">JavaScript Topics</a> |
+      <a href="arabic summary.html" class="footer-link">Arabic summary</a> |<br></br>
+       <a href ="Arabic-media.html" class="footer-link">Arabic-media</a> |
+      <a href="references.html" class="footer-link">References</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+

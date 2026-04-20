@@ -1,0 +1,194 @@
+/* ===== GENERAL ===== */
+body.topic4-page { /* This style is apply only for the topic 4*/
+
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0; /* remove all the white borders around the page */
+
+  background-color: #EFE7DA; /* give the whole page a light beige/cream */
+
+  color: #333;/* set default the text color  */
+
+}
+
+/* ===== HEADER ===== */
+.header-container { /* to seperate the header from the body */
+
+  height: 15px;
+  background-color: #EFE7DA;
+  width: 100%;
+}
+
+header {
+  background-color: #fff; /* white backgrounf for the header*/
+  padding: 2rem 1rem;/* padding for the space inside the box each rem=16px  so 2rem on top&bottom and the 1 rem on left &right this to prevent the texts and link touch the edges of the box*/
+  text-align: center; /* to center the text */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* horizontal offset, vertical ofsset, blur radius, color, so the vertical is 0 then the shadow doesn't move left or right, the verical is 3 px so the shadow is 3px below the box so the box will be lifted, the blur radius how the shadow is if the number is bigger the softer is the blur*/
+}
+
+header h1 {
+  color: #4a7a4a; /* the title internet stats is in green*/
+  font-size: 2rem;
+  text-shadow: 2px 2px #a3c2a3; /* the text shadow give is a soft 3d glowing effect*/
+}
+
+header nav {
+  display: flex; /* we turns the nav bar into a flex box for resonsive alignmnet*/
+  justify-content: center;
+  flex-wrap: wrap; /* if the screen is small the links will wrap to the next line*/
+  gap: 0.5rem; /*space between links*/
+}
+
+.header-link {
+  color: #4a7a4a; /*green text*/
+  font-weight: 600; /*slightly bold*/
+  text-shadow: 1px 1px #a3c2a3; /*soft shadow to be 3d*/
+  padding: 0.5rem 1rem; /*space inside the box of the links*/
+  border-radius: 8px;/* to have a soft border box*/
+  background-color: #e6f0e6;
+  text-decoration: none; /*remove the underline*/
+  transition: 0.3s; /*makes hover animations*/
+}
+
+.header-link:hover {
+  transform: translateY(-2px); /*bs ekbos aalaya btaamol metel harake bt hez*/
+  box-shadow: 0 3px #a3c2a3; /*shadow below the link*/
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 1100px; /*limiting the width of content so it doesn't stretch on big screen*/
+  margin: 2rem auto; /*adding space above and below the content and centers it horizontaly*/
+  padding: 0 1rem; /*adding 1rem space on left and right so content doesn't touch the edges*/
+}
+
+.intro p { /*first paragraph*/
+  font-weight: bold; /*makes text bold*/
+  color: #4a7a4a; 
+  border-left: 4px solid #4a7a4a; /*vertical green line on the left*/
+  padding-left: 1rem; /*space between the text and the vertical line*/
+}
+
+/* Sections */
+.stats-section, .lebanon-stats, .comparison-table {
+  background-color: #fff;
+  border-left: 6px solid #a3c2a3;
+  border-radius: 12px; /*rounded corners*/
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stats-section h2, .lebanon-stats h2, .comparison-table h2 {
+  color: #4a7a4a;
+  text-shadow: 1px 1px #cde0cd;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Image */
+figure {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th {
+  background-color: #a3c2a3;
+  color: #fff;
+  text-shadow: 1px 1px #3d5d3d;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* ===== FOOTER (same as header) ===== */
+footer {
+  background-color: #fff; /* full white box across page */
+  color: #4a7a4a;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  border-top: 3px solid #a3c2a3;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 20px; /* creates small peach-cream line below */
+}
+
+.footer-nav {
+  margin-top: 0.8rem;
+}
+
+.footer-link {
+  color: #4a7a4a;
+  font-weight: 600;
+  text-shadow: 1px 1px #a3c2a3;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px #a3c2a3;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .intro img { width: 90%; }
+}
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;   /* no underline */
+  font-weight: 600;
+  margin-left: 20px;       /* spacing between links */
+}
+
+.top-buttons-plain a:hover {
+  color: #a3c2a3;          /* hover color */
+}
+.top-buttons-plain {
+  text-align: right;       /* align to the right */
+  margin-bottom: 10px;     /* space above the title */
+  padding-right: 1rem;     /* distance from right edge */
+  font-size: 0.9rem;
+}
+
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;   /* no underline */
+  font-weight: 600;
+  margin-left: 20px;       /* spacing between links */
+}
+
+.top-buttons-plain a:hover {
+  color: #a3c2a3;          /* hover color */
+}

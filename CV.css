@@ -1,0 +1,127 @@
+body.topic1-page {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  background-color: #EFE7DA;
+  color: #4a3220;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #4a7a4a;
+  text-shadow: 2px 2px #a3c2a3;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* CV Cards */
+.cv-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.cv-card h2 {
+  color: #4a7a4a;
+  text-shadow: 1px 1px #a3c2a3;
+  border-bottom: 2px solid #a3c2a3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-card p, .cv-card li {
+  line-height: 1.6;
+}
+
+.skills {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  background-color: #4a7a4a;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #3b643b;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #4a7a4a;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 600;
+  border-top: 3px solid #a3c2a3;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+  margin-top: 3rem;
+}
+
+.footer-link {
+  color: #4a7a4a;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px #a3c2a3;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+.top-buttons-plain {
+  text-align: right;       /* align to the right */
+  margin-bottom: 10px;     /* space above the title */
+  padding-right: 1rem;     /* distance from right edge */
+  font-size: 0.9rem;
+}
+
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;   /* no underline */
+  font-weight: 600;
+  margin-left: 20px;       /* spacing between links */
+}
+
+.top-buttons-plain a:hover {
+  color: #a3c2a3;          /* hover color */
+}

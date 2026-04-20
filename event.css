@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+.top-buttons-plain {
+  text-align: right;       /* align links to right edge */
+  margin-bottom: 10px;
+  padding-right: 1rem;     /* distance from right edge */
+  font-size: 0.9rem;
+}
+.top-buttons-plain a {
+  color: #4a7a4a;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 20px;          /* spacing between links */
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  display: inline-block;       /* keep text and emoji together */
+  direction: ltr;              /* make emoji appear left of text */
+  unicode-bidi: plaintext;     /* ensures proper order */
+}
+
+.top-buttons-plain a:hover {
+  color: #a3c2a3;
+}

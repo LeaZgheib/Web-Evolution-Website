@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe Game</title>
+  <meta name="description" content="Client-side Tic Tac Toe game using HTML, CSS, JavaScript.">
+  <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="../first page.html">🏠 Home</a>
+  </nav>
+  <h1>Tic Tac Toe</h1>
+</header>
+
+<main>
+  <div id="status" class="status" role="status" aria-live="polite">
+    Player X’s turn
+  </div>
+
+  <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board"></div>
+
+  <button id="resetBtn" class="btn">New Game</button>
+
+  <!-- SCOREBOARD BUTTONS -->
+  <div class="scoreboard">
+    <button id="xWinsBtn" class="btn score">X Wins: 0</button>
+    <button id="oWinsBtn" class="btn score">O Wins: 0</button>
+    <button id="drawsBtn" class="btn score">Draws: 0</button>
+  </div>
+
+  <p class="updated">Last updated: November 2025</p>
+</main>
+
+<footer>
+  <p class="disclaimer">
+    Disclaimer: This website is for educational use only.  
+    Some content may include AI-assisted work.
+  </p>
+</footer>
+
+<script src="tictactoe.js" defer></script>
+</body>
+</html>

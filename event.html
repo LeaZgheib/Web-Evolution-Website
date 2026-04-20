@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catalog of all browser events, categorized and searchable with links to W3Schools.">
+  <meta name="author" content="Your Name">
+  <title>Events Catalog</title>
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+  <header>
+    <div class="top-buttons-plain">
+        <a href="../first page.html">🏠 Home</a>
+    <a href="CV.html">📄 My CV</a>
+    <a href="schedule.html">🗓️ My Schedule</a>
+    <a href="CV-entry.html"> 📝CV Data Entry</a>
+    <a href="event.html"> Events</a>
+   
+    
+  </div>
+    <h1>Events Catalog</h1>
+    <p>Last updated: November 13, 2025</p>
+  </header>
+
+  <section>
+    <label for="searchInput">Search Events:</label>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by name or description..."
+      aria-label="Search events"
+    >
+
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter" aria-label="Filter by category">
+      <option value="all">All Categories</option>
+      <option value="AnimationEvent">Animation/Transition</option>
+      <option value="UiEvent">UI / Generic Event</option>
+      <option value="MouseEvent">Mouse</option>
+      <option value="KeyboardEvent">Keyboard</option>
+      <option value="FocusEvent">Focus</option>
+      <option value="ClipboardEvent">Clipboard</option>
+      <option value="Form">Form</option>
+      <option value="DragEvent">Drag & Drop</option>
+      <option value="TouchEvent">Touch</option>
+      <option value="MediaEvent">Media / Other</option>
+      <option value="TransitionEvent">CSS Transition</option>
+      <option value="HashChangeEvent">Hash Change</option>
+      <option value="PageTransitionEvent">Page Transition</option>
+    </select>
+
+    <p id="eventCount">Showing all 82 events</p>
+  </section>
+
+  <table id="eventsTable">
+    <thead>
+      <tr>
+        <th scope="col">Event Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Description</th>
+        <th scope="col">Supported Tags</th>
+        <th scope="col">Reference</th>
+      </tr>
+    </thead>
+
+
+<tbody>
+<tr>
+<td>onabort</td>
+<td>UiEvent, Event</td>
+<td>The loading of a media is aborted</td>
+<td>&lt;audio&gt; and &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onabort.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onafterprint</td>
+<td>Event</td>
+<td>A page has started printing</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onafterprint.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>animationend</td>
+<td>AnimationEvent</td>
+<td>A CSS animation has completed</td>
+<td>-</td>
+<td><a href="https://www.w3schools.com/jsref/event_animationend.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>animationiteration</td>
+<td>AnimationEvent</td>
+<td>A CSS animation is repeated</td>
+<td>-</td>
+<td><a href="https://www.w3schools.com/jsref/event_animationiteration.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>animationstart</td>
+<td>AnimationEvent</td>
+<td>A CSS animation has started</td>
+<td>-</td>
+<td><a href="https://www.w3schools.com/jsref/event_animationstart.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onbeforeprint</td>
+<td>Event</td>
+<td>A page is about to be printed</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onbeforeprint.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onbeforeunload</td>
+<td>UiEvent, Event</td>
+<td>Before a document is about to be unloaded</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onbeforeunload.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onblur</td>
+<td>FocusEvent</td>
+<td>An element loses focus</td>
+<td>All HTML elements, EXCEPT: &lt;base&gt;, &lt;bdo&gt;, &lt;br&gt;, &lt;head&gt;, &lt;html&gt;, &lt;iframe&gt;, &lt;meta&gt;, &lt;param&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onblur.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oncanplay</td>
+<td>Event</td>
+<td>The browser can start playing a media (has buffered enough to begin)</td>
+<td>&lt;audio&gt; and &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_oncanplay.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oncanplaythrough</td>
+<td>Event</td>
+<td>The browser can play through a media without stopping for buffering</td>
+<td>&lt;audio&gt; and &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_oncanplaythrough.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onchange</td>
+<td>Event</td>
+<td>The content of a form element has changed</td>
+<td>&lt;input type="checkbox"&gt;, &lt;input type="color"&gt;, &lt;input type="date"&gt;, &lt;input type="datetime"&gt;, &lt;input type="email"&gt;, &lt;input type="file"&gt;, &lt;input type="month"&gt;, &lt;input type="number"&gt;, &lt;input type="password"&gt;, &lt;input type="radio"&gt;, &lt;input type="range"&gt;, &lt;input type="search"&gt;, &lt;input type="tel"&gt;, &lt;input type="text"&gt;, &lt;input type="time"&gt;, &lt;input type="url"&gt;, &lt;input type="week"&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onchange.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onclick</td>
+<td>MouseEvent</td>
+<td>An element is clicked on</td>
+<td>All except: &lt;base&gt;, &lt;bdo&gt;, &lt;br&gt;, &lt;head&gt;, &lt;html&gt;, &lt;iframe&gt;, &lt;meta&gt;, &lt;param&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oncontextmenu</td>
+<td>MouseEvent</td>
+<td>An element is right-clicked to open a context menu</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_oncontextmenu.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oncopy</td>
+<td>ClipboardEvent</td>
+<td>The content of an element is copied</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_oncopy.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oncut</td>
+<td>ClipboardEvent</td>
+<td>The content of an element is cut</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_oncut.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondblclick</td>
+<td>MouseEvent</td>
+<td>An element is double-clicked</td>
+<td>All except: &lt;base&gt;, &lt;bdo&gt;, &lt;br&gt;, &lt;head&gt;, &lt;html&gt;, &lt;iframe&gt;, &lt;meta&gt;, &lt;param&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondblclick.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondrag</td>
+<td>DragEvent</td>
+<td>An element is being dragged</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondrag.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondragend</td>
+<td>DragEvent</td>
+<td>Dragging of an element has ended</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondragend.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondragenter</td>
+<td>DragEvent</td>
+<td>A dragged element enters the drop target</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondragenter.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondragleave</td>
+<td>DragEvent</td>
+<td>A dragged element leaves the drop target</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondragleave.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondragover</td>
+<td>DragEvent</td>
+<td>A dragged element is over the drop target</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondragover.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondragstart</td>
+<td>DragEvent</td>
+<td>Dragging of an element has started</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondragstart.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondrop</td>
+<td>DragEvent</td>
+<td>A dragged element is dropped on the target</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondrop.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ondurationchange</td>
+<td>Event</td>
+<td>The duration of a media changes</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_ondurationchange.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onended</td>
+<td>Event</td>
+<td>Media playback has ended</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onended.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onerror</td>
+<td>Event</td>
+<td>An error occurs while loading an external file</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onerror.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onfocus</td>
+<td>FocusEvent</td>
+<td>An element gets focus</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onfocus.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onfocusin</td>
+<td>FocusEvent</td>
+<td>An element is about to get focus</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onfocusin.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onfocusout</td>
+<td>FocusEvent</td>
+<td>An element is about to lose focus</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onfocusout.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onhashchange</td>
+<td>Event</td>
+<td>The anchor part of a URL has changed</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onhashchange.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oninput</td>
+<td>Event</td>
+<td>User input is received in an element</td>
+<td>&lt;input&gt;, &lt;textarea&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_oninput.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>oninvalid</td>
+<td>Event</td>
+<td>An element is invalid</td>
+<td>Form elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_oninvalid.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onkeydown</td>
+<td>KeyboardEvent</td>
+<td>A key is pressed down</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onkeydown.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onkeypress</td>
+<td>KeyboardEvent</td>
+<td>A key is pressed and released</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onkeypress.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onkeyup</td>
+<td>KeyboardEvent</td>
+<td>A key is released</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onkeyup.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onload</td>
+<td>Event</td>
+<td>A page or an element has finished loading</td>
+<td>&lt;body&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onload.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onloadeddata</td>
+<td>Event</td>
+<td>Media data is loaded</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onloadeddata.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onloadedmetadata</td>
+<td>Event</td>
+<td>Media metadata (duration, dimensions) is loaded</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onloadedmetadata.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onloadstart</td>
+<td>Event</td>
+<td>Loading of media data has started</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onloadstart.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmessage</td>
+<td>MessageEvent</td>
+<td>A message is received through a WebSocket or worker</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmessage.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmousedown</td>
+<td>MouseEvent</td>
+<td>The mouse button is pressed down</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmousedown.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmouseenter</td>
+<td>MouseEvent</td>
+<td>The mouse pointer moves into an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmouseenter.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmouseleave</td>
+<td>MouseEvent</td>
+<td>The mouse pointer moves out of an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmouseleave.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmousemove</td>
+<td>MouseEvent</td>
+<td>The mouse pointer is moving over an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmousemove.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmouseout</td>
+<td>MouseEvent</td>
+<td>The mouse pointer leaves an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmouseout.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmouseover</td>
+<td>MouseEvent</td>
+<td>The mouse pointer moves over an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmouseover.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onmouseup</td>
+<td>MouseEvent</td>
+<td>The mouse button is released</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onmouseup.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onoffline</td>
+<td>Event</td>
+<td>The browser goes offline</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onoffline.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ononline</td>
+<td>Event</td>
+<td>The browser goes online</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_ononline.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onpagehide</td>
+<td>PageTransitionEvent</td>
+<td>The user navigates away from the page</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onpagehide.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onpageshow</td>
+<td>PageTransitionEvent</td>
+<td>The user navigates to the page</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onpageshow.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onpaste</td>
+<td>ClipboardEvent</td>
+<td>Content is pasted into an element</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onpaste.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onpause</td>
+<td>Event</td>
+<td>Media playback is paused</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onpause.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onplay</td>
+<td>Event</td>
+<td>Media playback has started</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onplay.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onplaying</td>
+<td>Event</td>
+<td>Media is playing after being paused or buffered</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onplaying.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onprogress</td>
+<td>Event</td>
+<td>Media is downloading</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onprogress.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onratechange</td>
+<td>Event</td>
+<td>The playback rate of a media changes</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onratechange.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onresize</td>
+<td>UiEvent</td>
+<td>The browser window is resized</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onresize.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onscroll</td>
+<td>UiEvent</td>
+<td>An element’s scrollbar is being scrolled</td>
+<td>All scrollable elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onscroll.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onseeked</td>
+<td>Event</td>
+<td>Seeking in a media file is complete</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onseeked.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onseeking</td>
+<td>Event</td>
+<td>Seeking in a media file is in progress</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onseeking.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onselect</td>
+<td>Event</td>
+<td>Some text is selected</td>
+<td>&lt;input&gt;, &lt;textarea&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onselect.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onshow</td>
+<td>Event</td>
+<td>A &lt;menu&gt; element is shown as a context menu</td>
+<td>&lt;menu&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onshow.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onstalled</td>
+<td>Event</td>
+<td>Media data is not available</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onstalled.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onstorage</td>
+<td>StorageEvent</td>
+<td>Web storage area is updated</td>
+<td>&lt;body&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onstorage.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onsubmit</td>
+<td>Event</td>
+<td>A form is submitted</td>
+<td>&lt;form&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onsubmit.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onsuspend</td>
+<td>Event</td>
+<td>Media loading is suspended</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onsuspend.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontimeupdate</td>
+<td>Event</td>
+<td>Media playback position has changed</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontimeupdate.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontoggle</td>
+<td>Event</td>
+<td>A &lt;details&gt; element is opened or closed</td>
+<td>&lt;details&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontoggle.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontouchcancel</td>
+<td>TouchEvent</td>
+<td>A touch point has been disrupted</td>
+<td>Touch devices</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontouchcancel.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontouchend</td>
+<td>TouchEvent</td>
+<td>A touch point is removed from the screen</td>
+<td>Touch devices</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontouchend.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontouchmove</td>
+<td>TouchEvent</td>
+<td>A touch point is moved along the surface</td>
+<td>Touch devices</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontouchmove.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>ontouchstart</td>
+<td>TouchEvent</td>
+<td>A finger is placed on a touch surface</td>
+<td>Touch devices</td>
+<td><a href="https://www.w3schools.com/jsref/event_ontouchstart.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onvolumechange</td>
+<td>Event</td>
+<td>The volume of a media changes</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onvolumechange.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onwaiting</td>
+<td>Event</td>
+<td>Media has stopped playing but is expected to resume</td>
+<td>&lt;audio&gt;, &lt;video&gt;</td>
+<td><a href="https://www.w3schools.com/jsref/event_onwaiting.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+<tr>
+<td>onwheel</td>
+<td>WheelEvent</td>
+<td>Mouse wheel is rolled up or down</td>
+<td>All HTML elements</td>
+<td><a href="https://www.w3schools.com/jsref/event_onwheel.asp" target="_blank">W3Schools ↗</a></td>
+</tr>
+</tbody>
+</table>
+<footer>
+    <p>&copy; 2025 Your Name — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const table = document.getElementById("eventsTable");
+    const rows = table.getElementsByTagName("tr");
+    const eventCount = document.getElementById("eventCount");
+
+    function filterEvents() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const category = categoryFilter.value;
+      let visibleCount = 0;
+
+      for (let i = 1; i < rows.length; i++) {
+        const cols = rows[i].getElementsByTagName("td");
+        if (cols.length === 0) continue;
+
+        const name = cols[0].textContent.toLowerCase();
+        const cat = cols[1].textContent;
+        const desc = cols[2].textContent.toLowerCase();
+
+        const matchesSearch = name.includes(searchTerm) || desc.includes(searchTerm);
+        const matchesCategory = category === "all" || cat === category;
+
+        if (matchesSearch && matchesCategory) {
+          rows[i].style.display = "";
+          visibleCount++;
+        } else {
+          rows[i].style.display = "none";
+        }
+      }
+
+      eventCount.textContent = `Showing ${visibleCount} event${visibleCount !== 1 ? "s" : ""}`;
+    }
+
+    searchInput.addEventListener("input", filterEvents);
+    categoryFilter.addEventListener("change", filterEvents);
+  </script>
+</body>
+</html>
+
